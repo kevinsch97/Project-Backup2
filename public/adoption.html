@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--
+      JavaScript 6th Edition  v 1.16
+     
+
+      Individual Project Template
+  
+      Author: Kevin Schembari 
+      Date:   9/12/17
+
+      Filename: Gallery.html
+   -->
+  
+ 
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0">
+   <title>Individual Student Project Template 1</title>
+   <link rel="stylesheet" href="styles.css" />
+  <!--replaced default font -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+
+<body>
+   <div id="container">
+      <header>
+         <h1>
+            <!--puts a "please adopt me" picture on the top of the page -->
+            <img src="https://cdn.glitch.com/8582e295-3e87-4093-b1e8-f8a9e97cefab%2FDepositphotos_40259325_s_opt.jpg?1505278115508" />
+         </h1>
+      </header>
+
+      <nav> 
+         <ul>
+           <!--hyperlinks pages in the navigation bar -->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="doges.html">Doges</a></li>
+           <li><a href="pictures.html">Pictures</a></li>
+            <li><a href="contact.html">Contact us</a></li> 
+           <li><a id="currentpage" >Adoption Prices</a></li>
+        </ul>
+      </nav>
+        
+      <article>
+      <h2>Adoption Prices</h2>
+      <form>
+        <!-- creates from with different products-->
+         <input type="checkbox" id="item1" value="350" />
+         <label for="item1">Adoption Fee ($350.00)</label>
+
+         <input type="checkbox" id="item2" value="15" />
+         <label for="item2">Leash ($15.00)</label>
+        
+         <input type="checkbox" id="item3" value="75" />
+         <label for="item3">Crate ($75.00)</label>
+        
+         <input type="checkbox" id="item4" value="10" />
+         <label for="item4">Collar ($10.00)</label>
+       
+         <input type="checkbox" id="item5" value="20" />
+         <label for="item6">Food ($20.00)</label>
+        
+        <input type="checkbox" id="item6" value="20" />
+         <label for="item6">Bed ($20.00)</label>
+       
+         <input type="button" id="submit" value="Submit" />
+      </form>
+   </article>
+    
+      <footer>
+         <p>Rent-a-Pupper &bull; Salisbury, Maryland</p>
+      </footer>
+   </div>
+  <script src="script.js"></script>
+</body>
+</html>

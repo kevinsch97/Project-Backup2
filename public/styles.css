@@ -1,0 +1,270 @@
+/*  JavaScript 6th Edition v 1.16
+ 
+    Large format style sheet
+
+    Filename: project.css
+*/
+
+/* apply a natural box layout model to all elements */
+* {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+/* reset rules */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+   display: block;
+}
+/*Changed color and font*/
+body {
+   line-height: 1;
+   width: 960px;
+   background: #FFFFFF;
+   margin: 0 auto;
+   font-family: Open Sans; 
+   position: relative;
+}
+
+ol, ul {
+   list-style: none;
+}
+
+blockquote, q {
+   quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+   content: '';
+   content: none;
+}
+
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+}
+ /*Changed color*/
+a:link, a:visited {
+   text-decoration: none;
+   color: #FFFFFF;
+}
+
+a:hover {
+   text-decoration: underline;
+   color: inherit;
+}
+
+a:active {
+   text-decoration: none;
+   color: inherit;
+}
+
+/* container */
+/*Changed color*/
+#container {
+   background: #FFFFFF;
+}
+
+/* page header */
+header {
+   background: white;
+   font-size: 48px;
+   float: left;
+}
+
+/* navigation */
+/*Changed font*/
+nav {
+   font-size: 16px;
+   font-family: "Open Sans";
+   padding-top: 142px;
+   background: white;
+   float: right;
+   width: 740px;
+}
+
+nav ul {
+   text-align: center;
+}
+/*Changed color*/
+nav ul li {
+   display: inline-block;
+   padding: 8px 15px;
+   margin: 0 3px;
+   background: #0080FF;
+   -moz-border-radius-topleft: 7px;
+   -moz-border-radius-topright: 7px;
+   -webkit-border-top-left-radius: 7px;
+   -webkit-border-top-right-radius: 7px;
+   border-top-left-radius: 7px;
+   border-top-right-radius: 7px;
+   -webkit-box-shadow: 2px -2px 0px #0080FF,
+                       2px 0px 0px #0080FF;
+   -moz-box-shadow:    2px -2px 0px #0080FF,
+                       2px 0px 0px #0080FF;
+   box-shadow:         2px -2px 0px #0080FF,
+                       2px 0px 0px #0080FF;
+}
+/*Changed color*/
+nav ul #currentpage {
+   background: #0080FF;
+   color: white;
+}
+
+/* main content */
+/*Changed color and font*/
+article {
+   width: 640px;
+   float: right;
+   font-family: "Open Sans", cursive;
+   text-align: left;
+   background: white;
+   padding: 10px;
+   border-top: 1px solid #0080FF;
+}
+
+article h2 {
+   font-family: "Open Sans", cursive;
+   font-size: 1.2em;
+   font-weight: bold;
+   text-align: center;
+   margin-bottom: 6px;
+}
+
+article p {
+   margin-bottom: 6px;
+   line-height: 1.2em;
+}
+
+article table {
+   margin: 0 auto;
+}
+
+article th, article td {
+   border: 1px solid black;
+   border-collapse: collapse;
+   padding: 5px;
+}
+
+article th {
+   font-weight: bold;
+   background: #EFE0B9;
+}
+
+/* form */
+form {
+   margin: 0 auto;
+}
+/*changed margin */
+input {
+   float: left;
+   clear: left;
+   margin: 0px;
+}
+
+label {
+   float: left;
+   font-size: 1.4em;
+}
+
+
+form fieldset{
+   border: none; 
+   background: #EFE0B9;
+   position: relative;
+}
+
+form legend {
+   font-size: 1.5em;
+   font-weight: bold;
+   margin: 10px;
+}
+
+form legend span {
+   position: relative;
+   top: 20px;
+}
+
+form label {
+   display: block;
+   font-size: 1.2em;
+   width: 480px;
+   text-align: left;
+}
+form label p {
+   float: left;
+   width: 100%;
+   text-align: left;
+}
+
+form label p:nth-child(2) {
+   font-size: 0.8em;
+}
+/*Changed font and margins*/
+form input {
+   padding: 1%;
+   background: #333;
+   color: #BBB;
+   border: none;
+   font: normal 1em/1.5em "Open Sans";
+   float: left;
+   clear: both;
+   width: 75px;
+   margin-left: 5px;
+   margin-bottom: 25px;
+   position: left;
+   top: -0.4em;
+}
+/*Changed position*/
+form input[type="checkbox"] {
+   position: left;
+}
+
+/* sidebar */
+aside {
+   float: left;
+   color: #EFE0B9;
+   top: 190px;
+   padding: 30px;
+}
+
+aside #estimate {
+   font-weight: bold;
+}
+
+/* footer */
+footer {
+   background: white;
+   width: 100%;
+   clear: both;
+   font-size: 14px;
+   padding: 10px;
+}
+
+footer p {
+   text-align: center;
+}
